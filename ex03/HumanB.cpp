@@ -7,9 +7,9 @@ void HumanB::attack() {
     if (weapon)
         std::cout <<  HumanB::name << " attacks with their " << HumanB::weapon->getType() << std::endl;
     else
-        std::cout <<  HumanB::name << " attacks with their empty" << std::endl;
+        std::cout <<  HumanB::name << " attacks with their hands" << std::endl;
 }
 
-void HumanB::setWeapon(Weapon weapon) {
-    HumanB::weapon->setType(weapon.getType());
+void HumanB::setWeapon(Weapon &weapon) {
+    HumanB::weapon = &weapon;
 }

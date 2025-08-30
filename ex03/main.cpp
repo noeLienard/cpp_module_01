@@ -5,20 +5,10 @@
 
 int main( void )
 {
-    {
-        Weapon club = Weapon("crude spiked club");
-        HumanA bob("Bob", club);
-        bob.attack();
-        club.setType("some other type of club");
-        bob.attack();
-    }
-    {
-        Weapon club = Weapon("crude spiked club");
-        HumanB jim("Jim");
-        jim.setWeapon(club);
-        jim.attack();
-        club.setType("some other type of club");
-        jim.attack();
-    }
+    int x = 10;
+    int &ref = x; // ref est un autre nom pour x
+    x = 20;     // modifie x aussi
+
+    std::cout << ref;
     return (0);
 }
