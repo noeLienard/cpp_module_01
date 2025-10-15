@@ -6,8 +6,8 @@
 int main( void )
 {
     int x = 10;
-    int &ref = x; // ref est un autre nom pour x
-    x = 20;     // modifie x aussi
+    int &ref = x;
+    x = 20;
 
     std::cout << ref;
     return (0);

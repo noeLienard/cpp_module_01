@@ -1,4 +1,4 @@
-NAME = Brainzzz
+NAME = ref
 
 CC = c++
 

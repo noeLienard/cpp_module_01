@@ -1,8 +1,8 @@
 #include "Zombie.hpp"
 
 int main(void) {
-    Zombie *zombie = zombieHorde(5, "Ordre 1");
+    Zombie *zombie = zombieHorde(5, "Horde");
     for (int i = 0; i < 5; i++)
         zombie[i].announce();
-    delete zombie;
+    delete[] zombie;
 }
